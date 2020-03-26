@@ -81,9 +81,14 @@ function createRock(x) {
      * we should call endGame().
      */
 
-     for (let top = 0; top < GAME_HEIGHT-20; top++) {
+     function step() {
+       
+       
        if (checkCollision(rock)) {
          endGame()
+       }
+       else if (top < GAME_HEIGHT-20) {
+         el.style.top = `${top += 2}px`;
        }
        else {
          top = top+2;
