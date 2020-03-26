@@ -81,6 +81,10 @@ function createRock(x) {
      * we should call endGame().
      */
 
+     if (top === dodger.style.top-20) {
+       endGame()
+     }
+     else
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
@@ -94,6 +98,7 @@ function createRock(x) {
   }
 
   // We should kick off the animation of the rock around here.
+  window.requestAnimationFrame(step);
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision.
