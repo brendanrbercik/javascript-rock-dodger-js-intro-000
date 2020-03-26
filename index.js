@@ -81,8 +81,7 @@ function createRock(x) {
      * we should call endGame().
      */
 
-     function step() {
-       el.style.top = `${top += 2}px`;
+
 
        if (checkCollision(rock)) {
          endGame()
@@ -93,9 +92,6 @@ function createRock(x) {
        else {
          ROCKS.shift(rock);
        }
-     }
-
-
      }
 
     /**
