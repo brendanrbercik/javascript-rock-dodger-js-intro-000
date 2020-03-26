@@ -96,7 +96,7 @@ function createRock(x) {
         else {
          window.requestAnimationFrame(step);
        }
-       
+
      }
 
 
