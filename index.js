@@ -82,14 +82,14 @@ function createRock(x) {
      */
 
      for (let top = 0; top < GAME_HEIGHT-20; top++) {
-       if (top === GAME_HEIGHT-40) {
+       else if (checkCollision(rock)) {
          endGame()
+       }
+       else {
+         top = top+2;
        }
      }
 
-
-
-     else if (top === GAME_HEIGHT-20) {
 
      }
 
