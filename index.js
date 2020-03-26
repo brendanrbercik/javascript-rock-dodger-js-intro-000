@@ -51,6 +51,10 @@ function checkCollision(rock) {
   }
 }
 
+function step() {
+  el.style.top = `${top += 2}px`;
+}
+
 function createRock(x) {
   const rock = document.createElement('div')
 
@@ -67,6 +71,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    $('#game').append(rock);
+   step();
 
   /**
    * This function moves the rock. (2 pixels at a time
