@@ -82,13 +82,13 @@ function createRock(x) {
      */
 
      function step() {
-
+       el.style.top = `${top += 2}px`;
 
        if (checkCollision(rock)) {
          endGame()
        }
        else if (top < GAME_HEIGHT-20) {
-         el.style.top = `${top += 2}px`;
+         window.requestAnimationFrame(step);
        }
        else {
          ROCKS.shift(rock);
