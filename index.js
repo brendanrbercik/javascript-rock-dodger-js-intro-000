@@ -82,8 +82,8 @@ function createRock(x) {
      */
 
      function step() {
-       
-       
+
+
        if (checkCollision(rock)) {
          endGame()
        }
