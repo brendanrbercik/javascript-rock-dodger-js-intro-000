@@ -69,16 +69,17 @@ function createRock(x) {
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
+   function step() {
+     top = top += 2;
+      if (top < 380) {
+        window.requestAnimationFrame(step);
+     }
+   }
+
   function moveRock() {
     // implement me!
     // (use the comments below to guide you!)
 
-    function step() {
-      top = top += 2;
-       if (top < 380) {
-         window.requestAnimationFrame(step);
-      }
-    }
       /**
        * If a rock collides with the DODGER,
        * we should call endGame().
