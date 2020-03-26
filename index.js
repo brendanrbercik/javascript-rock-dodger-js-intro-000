@@ -66,6 +66,7 @@ function createRock(x) {
    */
    GAME.append(rock);
  }
+
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
@@ -107,7 +108,7 @@ function createRock(x) {
   ROCKS.push(rock);
 
   // Finally, return the rock element you've created.
-  return rock;
+  return(rock);
 }
 
 /**
