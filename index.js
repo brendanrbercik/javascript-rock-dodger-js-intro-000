@@ -51,10 +51,6 @@ function checkCollision(rock) {
   }
 }
 
-function step() {
-  rock.style.top = `${top += 2}px`;
-}
-
 function createRock(x) {
   const rock = document.createElement('div')
 
@@ -65,6 +61,10 @@ function createRock(x) {
   var top = 0
 
   rock.style.top = top
+
+  function step() {
+    rock.style.top = `${top += 2}px`;
+  }
 
   /**
    * Now that we have a rock, we'll need to append
