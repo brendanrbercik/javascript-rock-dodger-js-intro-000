@@ -52,8 +52,7 @@ function checkCollision(rock) {
 }
 
 function step() {
-  rock.style.top = `${top+=2}px`;
-  window.requestAnimationFrame(step);
+  rock.style.top = `${top+2}px`;
 }
 
 function createRock(x) {
