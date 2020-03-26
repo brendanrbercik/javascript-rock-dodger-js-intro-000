@@ -88,7 +88,7 @@ function createRock(x) {
        * If a rock collides with the DODGER,
        * we should call endGame().
        */
-       if (checkCollision(rock)) {
+       if (checkCollision(rock) == true) {
          endGame();
        }
        /**
@@ -107,10 +107,6 @@ function createRock(x) {
           ROCKS.shift();
         }
      }
-
-
-
-
 
   // We should kick off the animation of the rock around here.
   window.requestAnimationFrame(step);
