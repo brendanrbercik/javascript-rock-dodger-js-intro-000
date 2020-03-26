@@ -69,12 +69,6 @@ function createRock(x) {
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-   function step() {
-     top = top += 2;
-      if (top < 380) {
-        window.requestAnimationFrame(step);
-     }
-   }
 
   function moveRock() {
     // implement me!
@@ -91,7 +85,10 @@ function createRock(x) {
         * Otherwise, if the rock hasn't reached the bottom of
         * the GAME, we want to move it again.
         */
-
+        function step() {
+          top = top += 2;
+        }
+        
         else if (top < 380){
          window.requestAnimationFrame(step);
        }
