@@ -89,7 +89,7 @@ function createRock(x) {
          endGame()
        }
 
-       else if (top < GAME_HEIGHT-20) {
+       else if (top < 360) {
          window.requestAnimationFrame(step);
        }
        else {
