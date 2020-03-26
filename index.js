@@ -76,6 +76,10 @@ function createRock(x) {
     // implement me!
     // (use the comments below to guide you!)
 
+    function step() {
+      rock.style.top = `${top+2}px`;
+      window.requestAnimationFrame(step);
+    }
       /**
        * If a rock collides with the DODGER,
        * we should call endGame().
