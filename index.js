@@ -101,7 +101,7 @@ function createRock(x) {
     else {
       ROCKS.shift();
     }
-
+}
   // We should kick off the animation of the rock around here.
   window.requestAnimationFrame(step);
 
