@@ -52,7 +52,7 @@ function checkCollision(rock) {
 }
 
 function step() {
-  el.style.top = `${top += 2}px`;
+  rock.style.top = `${top += 2}px`;
 }
 
 function createRock(x) {
