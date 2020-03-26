@@ -88,6 +88,7 @@ function createRock(x) {
        if (checkCollison(rock) == true) {
          endGame()
        }
+       
        else if (top < GAME_HEIGHT-20) {
          window.requestAnimationFrame(step);
        }
