@@ -110,7 +110,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval = null;
+  gameInterval = 0;
 
   alert("YOU LOSE!");
 }
@@ -170,7 +170,6 @@ function positionToInteger(p) {
 
 function start() {
   window.addEventListener('keydown', moveDodger)
-
   START.style.display = 'none'
 
   gameInterval = setInterval(function() {
