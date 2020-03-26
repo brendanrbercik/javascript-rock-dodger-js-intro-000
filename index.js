@@ -91,7 +91,7 @@ function createRock(x) {
          el.style.top = `${top += 2}px`;
        }
        else {
-         top = top+2;
+         ROCKS.shift(rock);
        }
      }
 
