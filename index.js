@@ -124,7 +124,6 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  ROCKS = [];
   clearInterval(gameInterval);
   alert("YOU LOSE!");
 }
