@@ -11,7 +11,6 @@ const ROCKS = []
 const START = document.getElementById('start')
 
 var gameInterval = null
-
 /**
  * Be aware of what's above this line,
  * but all of your work should happen below.
@@ -48,10 +47,8 @@ function checkCollision(rock) {
     {
       return true
     }
-    else {
-      return false
-    }
   }
+  return false;
 }
 
 function createRock(x) {
@@ -63,18 +60,11 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  function step() {
-    top = top += 2;
-     if (top < 380) {
-       window.requestAnimationFrame(step);
-    }
-  }
-
   /**
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-ROCKS.append(rock);
+   ROCKS.append(rock);
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
@@ -83,6 +73,12 @@ ROCKS.append(rock);
     // implement me!
     // (use the comments below to guide you!)
 
+    function step() {
+      top = top += 2;
+       if (top < 380) {
+         window.requestAnimationFrame(step);
+      }
+    }
       /**
        * If a rock collides with the DODGER,
        * we should call endGame().
