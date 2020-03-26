@@ -77,7 +77,8 @@ function createRock(x) {
     // (use the comments below to guide you!)
 
     function step() {
-      rock.style.top = `${top+2}px`;
+      var top = 0;
+      rock.style.top = `${top + 2}px`;
       window.requestAnimationFrame(step);
     }
       /**
