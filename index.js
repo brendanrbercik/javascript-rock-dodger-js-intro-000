@@ -81,10 +81,17 @@ function createRock(x) {
      * we should call endGame().
      */
 
-     if (top === dodger.style.top-20) {
-       endGame()
+     for (let top = 0; top < GAME_HEIGHT-20; top++) {
+       if (top === GAME_HEIGHT-40) {
+         endGame()
+       }
      }
-     else
+
+
+
+     else if (top === GAME_HEIGHT-20) {
+
+     }
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
