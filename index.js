@@ -65,7 +65,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    //GAME.append(rock);
- }
+
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -102,6 +102,7 @@ function createRock(x) {
       ROCKS.shift();
     }
 }
+
   // We should kick off the animation of the rock around here.
   window.requestAnimationFrame(step);
 
@@ -111,6 +112,7 @@ function createRock(x) {
 
   // Finally, return the rock element you've created.
   return(rock);
+}
 }
 
 /**
