@@ -111,7 +111,7 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval = null;
-  
+
   alert("YOU LOSE!");
 }
 
@@ -142,7 +142,7 @@ function moveDodgerLeft() {
    var leftInt = parseInt(leftString);
 
    if (leftInt > 0) {
-     dodger.style.left = `${leftInt-4}px`;
+     dodger.style.left = `${leftInt-10}px`;
    }
 }
 
