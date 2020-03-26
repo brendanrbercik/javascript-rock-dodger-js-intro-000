@@ -54,11 +54,11 @@ function checkCollision(rock) {
 function createRock(x) {
   const rock = document.createElement('div')
 
-  rock.className = 'rock';
-  rock.style.left = `${x}px`;
+  rock.className = 'rock'
+  rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = rock.style.top = 0;
+  var top = rock.style.top = 0
 
   /**
    * Now that we have a rock, we'll need to append
@@ -73,7 +73,7 @@ function createRock(x) {
    */
 
   function moveRock() {
-    rock.style.top = `${top + 2}px`;
+    rock.style.top = `${top += 2}px`;
     // implement me!
     // (use the comments below to guide you!)
 
@@ -109,7 +109,7 @@ function createRock(x) {
   ROCKS.push(rock);
 
   // Finally, return the rock element you've created.
-  return(rock);
+  return rock;
 }
 
 
